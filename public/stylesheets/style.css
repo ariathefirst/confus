@@ -1,3 +1,8 @@
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
+
 body {
     font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
     width: 100%;
@@ -113,17 +118,19 @@ a {
 	width=100%;
 	vertical-align: center;
 	position:absolute;
-	left: 25%;
+	left: 50%;
 	top: 50%;
+
 	-moz-transform: scale(1, -1);
 -webkit-transform: scale(1, -1);
 -o-transform: scale(1, -1);
 -ms-transform: scale(1, -1);
-transform: scale(1, -1);
+transform: scale(1, -1) translate(-50%, -50%)
 
 }
 
 .histogram-block {
 	background-color: #f99945;
+	border: 1px solid black;
 	width:  5px;
 }
