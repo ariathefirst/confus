@@ -6,6 +6,10 @@ var url = require("url");
 router.get('/:vidId', function(req, res, next) {
 	var vidId = url.parse(req.url).pathname;
 	console.log(vidId);
+	res.render('vidId', req.params);
+});
+
+router.get('/', function(req, res, next) {
 	res.render('index', req.params);
 });
 
