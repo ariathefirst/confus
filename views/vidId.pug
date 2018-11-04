@@ -1,11 +1,11 @@
 extends layout
 
 block content
-	h1= title
-	p Welcome to #{title}
-	div(id='ytplayer')
-	script.
-		var vidId = "#{vidId}";
-	script(src='javascripts/youtubeembed.js')
-	div(id='timer')
-	div(id='confusion-bar')
+	div(id='content')
+		h3= '[course name]'
+		div(id='ytplayer')
+		script.
+			var vidId = "#{vidId}";
+		script(src='javascripts/youtubeembed.js')
+		div(id='timer')
+		div(id='confusion-bar')
