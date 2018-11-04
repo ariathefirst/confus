@@ -1,0 +1,980 @@
+matrix:
+ [[0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0], [0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0], [0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0]]
+Waiting for operation to complete...
+starts analyzing text
+Transcript: hello world in storage and I'm excited to announce that school of AI is launching a research lab thanks to Google Cloud we're going to offer 10 Wizards 1000 US dollars in Cloud credits to pursue some exciting research directions they'll be our fall 2018 fellows each of them will receive personalized mentorship from one of our experience advisors to help them along their Journey we like to grow the amateur research community that means Wizards from around the world who aren't necessarily a part of Academia or industry we believe that by enabling them to do research with a complete pipeline of resources from funding to mentorship to helping them submit their work to relevant Outlets the entire AI Community will benefit so here's the plan we've got some research directions that we think are particularly exciting including
+Confidence: 0.9784610867500305
+Word: hello, start_time: 0.0, end_time: 0.4
+Word: world, start_time: 0.4, end_time: 0.6000000000000001
+Word: in, start_time: 0.6000000000000001, end_time: 1.1
+Word: storage, start_time: 1.1, end_time: 1.8
+Word: and, start_time: 1.8, end_time: 2.0
+Word: I'm, start_time: 2.0, end_time: 2.2
+Word: excited, start_time: 2.2, end_time: 2.6
+Word: to, start_time: 2.6, end_time: 2.9
+Word: announce, start_time: 2.9, end_time: 3.0
+Word: that, start_time: 3.0, end_time: 3.5
+Word: school, start_time: 3.5, end_time: 4.0
+Word: of, start_time: 4.0, end_time: 4.1
+Word: AI, start_time: 4.1, end_time: 4.4
+Word: is, start_time: 4.4, end_time: 4.8
+Word: launching, start_time: 4.8, end_time: 5.4
+Word: a, start_time: 5.4, end_time: 5.5
+Word: research, start_time: 5.5, end_time: 6.1
+Word: lab, start_time: 6.1, end_time: 6.4
+Word: thanks, start_time: 6.4, end_time: 7.0
+Word: to, start_time: 7.0, end_time: 7.2
+Word: Google, start_time: 7.2, end_time: 7.3
+Word: Cloud, start_time: 7.3, end_time: 7.8
+Word: we're, start_time: 7.8, end_time: 8.1
+Word: going, start_time: 8.1, end_time: 8.3
+Word: to, start_time: 8.3, end_time: 8.4
+Word: offer, start_time: 8.4, end_time: 8.8
+Word: 10, start_time: 8.8, end_time: 9.2
+Word: Wizards, start_time: 9.2, end_time: 9.7
+Word: 1000, start_time: 9.7, end_time: 10.7
+Word: US, start_time: 10.7, end_time: 11.2
+Word: dollars, start_time: 11.2, end_time: 11.4
+Word: in, start_time: 11.4, end_time: 12.2
+Word: Cloud, start_time: 12.2, end_time: 12.6
+Word: credits, start_time: 12.6, end_time: 13.2
+Word: to, start_time: 13.2, end_time: 13.5
+Word: pursue, start_time: 13.5, end_time: 13.8
+Word: some, start_time: 13.8, end_time: 14.0
+Word: exciting, start_time: 14.0, end_time: 14.6
+Word: research, start_time: 14.6, end_time: 15.0
+Word: directions, start_time: 15.0, end_time: 15.5
+Word: they'll, start_time: 15.5, end_time: 16.4
+Word: be, start_time: 16.4, end_time: 16.5
+Word: our, start_time: 16.5, end_time: 16.7
+Word: fall, start_time: 16.7, end_time: 17.1
+Word: 2018, start_time: 17.1, end_time: 17.6
+Word: fellows, start_time: 17.6, end_time: 18.6
+Word: each, start_time: 18.6, end_time: 18.9
+Word: of, start_time: 18.9, end_time: 19.1
+Word: them, start_time: 19.1, end_time: 19.2
+Word: will, start_time: 19.2, end_time: 19.4
+Word: receive, start_time: 19.4, end_time: 19.7
+Word: personalized, start_time: 19.7, end_time: 20.9
+Word: mentorship, start_time: 20.9, end_time: 21.5
+Word: from, start_time: 21.5, end_time: 22.2
+Word: one, start_time: 22.2, end_time: 22.5
+Word: of, start_time: 22.5, end_time: 22.6
+Word: our, start_time: 22.6, end_time: 22.7
+Word: experience, start_time: 22.7, end_time: 23.7
+Word: advisors, start_time: 23.7, end_time: 24.5
+Word: to, start_time: 24.5, end_time: 24.7
+Word: help, start_time: 24.7, end_time: 24.9
+Word: them, start_time: 24.9, end_time: 25.1
+Word: along, start_time: 25.1, end_time: 25.4
+Word: their, start_time: 25.4, end_time: 25.9
+Word: Journey, start_time: 25.9, end_time: 26.4
+Word: we, start_time: 26.4, end_time: 27.2
+Word: like, start_time: 27.2, end_time: 27.4
+Word: to, start_time: 27.4, end_time: 27.5
+Word: grow, start_time: 27.5, end_time: 27.9
+Word: the, start_time: 27.9, end_time: 28.4
+Word: amateur, start_time: 28.4, end_time: 29.0
+Word: research, start_time: 29.0, end_time: 29.6
+Word: community, start_time: 29.6, end_time: 30.2
+Word: that, start_time: 30.2, end_time: 30.8
+Word: means, start_time: 30.8, end_time: 31.1
+Word: Wizards, start_time: 31.1, end_time: 31.5
+Word: from, start_time: 31.5, end_time: 31.7
+Word: around, start_time: 31.7, end_time: 32.3
+Word: the, start_time: 32.3, end_time: 32.5
+Word: world, start_time: 32.5, end_time: 32.8
+Word: who, start_time: 32.8, end_time: 33.4
+Word: aren't, start_time: 33.4, end_time: 33.8
+Word: necessarily, start_time: 33.8, end_time: 34.5
+Word: a, start_time: 34.5, end_time: 34.8
+Word: part, start_time: 34.8, end_time: 35.1
+Word: of, start_time: 35.1, end_time: 35.3
+Word: Academia, start_time: 35.3, end_time: 36.0
+Word: or, start_time: 36.0, end_time: 36.6
+Word: industry, start_time: 36.6, end_time: 37.2
+Word: we, start_time: 37.2, end_time: 37.9
+Word: believe, start_time: 37.9, end_time: 38.3
+Word: that, start_time: 38.3, end_time: 38.4
+Word: by, start_time: 38.4, end_time: 38.6
+Word: enabling, start_time: 38.6, end_time: 39.3
+Word: them, start_time: 39.3, end_time: 39.8
+Word: to, start_time: 39.8, end_time: 39.8
+Word: do, start_time: 39.8, end_time: 40.1
+Word: research, start_time: 40.1, end_time: 40.6
+Word: with, start_time: 40.6, end_time: 40.8
+Word: a, start_time: 40.8, end_time: 40.9
+Word: complete, start_time: 40.9, end_time: 41.7
+Word: pipeline, start_time: 41.7, end_time: 42.4
+Word: of, start_time: 42.4, end_time: 42.6
+Word: resources, start_time: 42.6, end_time: 43.2
+Word: from, start_time: 43.2, end_time: 44.0
+Word: funding, start_time: 44.0, end_time: 44.7
+Word: to, start_time: 44.7, end_time: 45.1
+Word: mentorship, start_time: 45.1, end_time: 45.8
+Word: to, start_time: 45.8, end_time: 46.4
+Word: helping, start_time: 46.4, end_time: 46.8
+Word: them, start_time: 46.8, end_time: 47.1
+Word: submit, start_time: 47.1, end_time: 47.7
+Word: their, start_time: 47.7, end_time: 48.1
+Word: work, start_time: 48.1, end_time: 48.5
+Word: to, start_time: 48.5, end_time: 48.6
+Word: relevant, start_time: 48.6, end_time: 49.1
+Word: Outlets, start_time: 49.1, end_time: 49.6
+Word: the, start_time: 49.6, end_time: 50.2
+Word: entire, start_time: 50.2, end_time: 50.9
+Word: AI, start_time: 50.9, end_time: 51.2
+Word: Community, start_time: 51.2, end_time: 51.8
+Word: will, start_time: 51.8, end_time: 52.0
+Word: benefit, start_time: 52.0, end_time: 52.4
+Word: so, start_time: 52.4, end_time: 52.9
+Word: here's, start_time: 52.9, end_time: 53.2
+Word: the, start_time: 53.2, end_time: 53.3
+Word: plan, start_time: 53.3, end_time: 53.4
+Word: we've, start_time: 53.4, end_time: 54.2
+Word: got, start_time: 54.2, end_time: 54.4
+Word: some, start_time: 54.4, end_time: 54.6
+Word: research, start_time: 54.6, end_time: 55.0
+Word: directions, start_time: 55.0, end_time: 55.5
+Word: that, start_time: 55.5, end_time: 56.0
+Word: we, start_time: 56.0, end_time: 56.3
+Word: think, start_time: 56.3, end_time: 56.8
+Word: are, start_time: 56.8, end_time: 56.9
+Word: particularly, start_time: 56.9, end_time: 57.8
+Word: exciting, start_time: 57.8, end_time: 58.7
+Word: including, start_time: 58.7, end_time: 59.5
+Transcript: how to learning or learning to learn Quantum machine learning one shot learning or learning from small data sets and deep reinforcement learning but these are all suggestions all 10 selected applicants will be able to choose the research direction of their choice with one caveat it has to be applied to one of the United Nations 17 sustainable development goals current AI technology accessible to anyone with an internet connection allows Ordinary People to create solutions to accelerate the progress of each of these School of AI research is applied research we make scientific discoveries with specific real world use cases in mind and we need a new standard for how these papers are presented to that end I've assisted too deep reinforcement learning Engineers Laura gracer and Tang Walloon and helping build out a frame
+Confidence: 0.9722051024436951
+Word: how, start_time: 59.9, end_time: 60.1
+Word: to, start_time: 60.1, end_time: 60.2
+Word: learning, start_time: 60.2, end_time: 60.5
+Word: or, start_time: 60.5, end_time: 60.9
+Word: learning, start_time: 60.9, end_time: 61.4
+Word: to, start_time: 61.4, end_time: 61.6
+Word: learn, start_time: 61.6, end_time: 61.8
+Word: Quantum, start_time: 61.8, end_time: 62.7
+Word: machine, start_time: 62.7, end_time: 63.5
+Word: learning, start_time: 63.5, end_time: 63.9
+Word: one, start_time: 63.9, end_time: 64.7
+Word: shot, start_time: 64.7, end_time: 65.2
+Word: learning, start_time: 65.2, end_time: 65.6
+Word: or, start_time: 65.6, end_time: 65.9
+Word: learning, start_time: 65.9, end_time: 66.3
+Word: from, start_time: 66.3, end_time: 66.5
+Word: small, start_time: 66.5, end_time: 66.8
+Word: data, start_time: 66.8, end_time: 67.2
+Word: sets, start_time: 67.2, end_time: 67.7
+Word: and, start_time: 67.7, end_time: 68.2
+Word: deep, start_time: 68.2, end_time: 68.6
+Word: reinforcement, start_time: 68.6, end_time: 68.9
+Word: learning, start_time: 68.9, end_time: 69.6
+Word: but, start_time: 69.6, end_time: 70.6
+Word: these, start_time: 70.6, end_time: 71.0
+Word: are, start_time: 71.0, end_time: 71.0
+Word: all, start_time: 71.0, end_time: 71.4
+Word: suggestions, start_time: 71.4, end_time: 72.1
+Word: all, start_time: 72.1, end_time: 72.7
+Word: 10, start_time: 72.7, end_time: 73.0
+Word: selected, start_time: 73.0, end_time: 73.6
+Word: applicants, start_time: 73.6, end_time: 74.1
+Word: will, start_time: 74.1, end_time: 74.3
+Word: be, start_time: 74.3, end_time: 74.5
+Word: able, start_time: 74.5, end_time: 74.6
+Word: to, start_time: 74.6, end_time: 74.8
+Word: choose, start_time: 74.8, end_time: 75.4
+Word: the, start_time: 75.4, end_time: 75.6
+Word: research, start_time: 75.6, end_time: 76.0
+Word: direction, start_time: 76.0, end_time: 76.7
+Word: of, start_time: 76.7, end_time: 77.0
+Word: their, start_time: 77.0, end_time: 77.3
+Word: choice, start_time: 77.3, end_time: 77.6
+Word: with, start_time: 77.6, end_time: 78.4
+Word: one, start_time: 78.4, end_time: 78.7
+Word: caveat, start_time: 78.7, end_time: 78.9
+Word: it, start_time: 78.9, end_time: 80.0
+Word: has, start_time: 80.0, end_time: 80.2
+Word: to, start_time: 80.2, end_time: 80.4
+Word: be, start_time: 80.4, end_time: 80.5
+Word: applied, start_time: 80.5, end_time: 81.0
+Word: to, start_time: 81.0, end_time: 81.1
+Word: one, start_time: 81.1, end_time: 81.2
+Word: of, start_time: 81.2, end_time: 81.3
+Word: the, start_time: 81.3, end_time: 81.4
+Word: United, start_time: 81.4, end_time: 81.8
+Word: Nations, start_time: 81.8, end_time: 82.6
+Word: 17, start_time: 82.6, end_time: 83.5
+Word: sustainable, start_time: 83.5, end_time: 84.2
+Word: development, start_time: 84.2, end_time: 84.8
+Word: goals, start_time: 84.8, end_time: 84.9
+Word: current, start_time: 84.9, end_time: 86.1
+Word: AI, start_time: 86.1, end_time: 86.4
+Word: technology, start_time: 86.4, end_time: 87.2
+Word: accessible, start_time: 87.2, end_time: 87.9
+Word: to, start_time: 87.9, end_time: 88.1
+Word: anyone, start_time: 88.1, end_time: 88.3
+Word: with, start_time: 88.3, end_time: 88.7
+Word: an, start_time: 88.7, end_time: 88.8
+Word: internet, start_time: 88.8, end_time: 89.2
+Word: connection, start_time: 89.2, end_time: 89.6
+Word: allows, start_time: 89.6, end_time: 90.5
+Word: Ordinary, start_time: 90.5, end_time: 91.5
+Word: People, start_time: 91.5, end_time: 92.1
+Word: to, start_time: 92.1, end_time: 92.4
+Word: create, start_time: 92.4, end_time: 92.7
+Word: solutions, start_time: 92.7, end_time: 93.2
+Word: to, start_time: 93.2, end_time: 94.1
+Word: accelerate, start_time: 94.1, end_time: 95.0
+Word: the, start_time: 95.0, end_time: 95.2
+Word: progress, start_time: 95.2, end_time: 95.9
+Word: of, start_time: 95.9, end_time: 95.9
+Word: each, start_time: 95.9, end_time: 96.3
+Word: of, start_time: 96.3, end_time: 96.4
+Word: these, start_time: 96.4, end_time: 96.5
+Word: School, start_time: 96.5, end_time: 97.6
+Word: of, start_time: 97.6, end_time: 97.8
+Word: AI, start_time: 97.8, end_time: 98.2
+Word: research, start_time: 98.2, end_time: 98.6
+Word: is, start_time: 98.6, end_time: 99.2
+Word: applied, start_time: 99.2, end_time: 100.1
+Word: research, start_time: 100.1, end_time: 100.3
+Word: we, start_time: 100.3, end_time: 101.3
+Word: make, start_time: 101.3, end_time: 101.5
+Word: scientific, start_time: 101.5, end_time: 102.1
+Word: discoveries, start_time: 102.1, end_time: 102.9
+Word: with, start_time: 102.9, end_time: 103.1
+Word: specific, start_time: 103.1, end_time: 103.8
+Word: real, start_time: 103.8, end_time: 104.3
+Word: world, start_time: 104.3, end_time: 104.9
+Word: use, start_time: 104.9, end_time: 105.2
+Word: cases, start_time: 105.2, end_time: 105.7
+Word: in, start_time: 105.7, end_time: 105.9
+Word: mind, start_time: 105.9, end_time: 106.4
+Word: and, start_time: 106.4, end_time: 106.7
+Word: we, start_time: 106.7, end_time: 107.0
+Word: need, start_time: 107.0, end_time: 107.2
+Word: a, start_time: 107.2, end_time: 107.3
+Word: new, start_time: 107.3, end_time: 107.5
+Word: standard, start_time: 107.5, end_time: 108.1
+Word: for, start_time: 108.1, end_time: 108.3
+Word: how, start_time: 108.3, end_time: 108.6
+Word: these, start_time: 108.6, end_time: 108.9
+Word: papers, start_time: 108.9, end_time: 109.5
+Word: are, start_time: 109.5, end_time: 109.7
+Word: presented, start_time: 109.7, end_time: 110.3
+Word: to, start_time: 110.3, end_time: 110.9
+Word: that, start_time: 110.9, end_time: 111.2
+Word: end, start_time: 111.2, end_time: 111.5
+Word: I've, start_time: 111.5, end_time: 111.8
+Word: assisted, start_time: 111.8, end_time: 112.0
+Word: too, start_time: 112.0, end_time: 112.6
+Word: deep, start_time: 112.6, end_time: 113.1
+Word: reinforcement, start_time: 113.1, end_time: 113.5
+Word: learning, start_time: 113.5, end_time: 114.1
+Word: Engineers, start_time: 114.1, end_time: 114.9
+Word: Laura, start_time: 114.9, end_time: 115.7
+Word: gracer, start_time: 115.7, end_time: 116.3
+Word: and, start_time: 116.3, end_time: 116.8
+Word: Tang, start_time: 116.8, end_time: 117.2
+Word: Walloon, start_time: 117.2, end_time: 118.0
+Word: and, start_time: 118.0, end_time: 118.3
+Word: helping, start_time: 118.3, end_time: 118.7
+Word: build, start_time: 118.7, end_time: 119.0
+Word: out, start_time: 119.0, end_time: 119.3
+Word: a, start_time: 119.3, end_time: 119.5
+Word: frame, start_time: 119.5, end_time: 119.9
+Transcript: work for deep reinforcement learning research called slm lab its design was Guided by four principles modularity Simplicity analytical Clarity and crucially reproducibility we got several Baseline reinforcement learning algorithms implemented and more to come as l m lab is an easy way to get started with deep reinforcement learning research you can just build on top of an existing algorithm and Benchmark the results all the algorithms relevant environments and testing tools are included in a single repository we have both a static and dynamic version of our paper the static version is a PDF like all papers are but the dynamic version is a Jupiter notebook we posted it on Google collab which means that anyone who read the paper can also view the results and a demo of slm lab by running code themselves in their brows
+Confidence: 0.96346116065979
+Word: work, start_time: 119.9, end_time: 120.2
+Word: for, start_time: 120.2, end_time: 120.7
+Word: deep, start_time: 120.7, end_time: 121.2
+Word: reinforcement, start_time: 121.2, end_time: 121.5
+Word: learning, start_time: 121.5, end_time: 122.1
+Word: research, start_time: 122.1, end_time: 122.9
+Word: called, start_time: 122.9, end_time: 123.6
+Word: slm, start_time: 123.6, end_time: 124.4
+Word: lab, start_time: 124.4, end_time: 125.1
+Word: its, start_time: 125.1, end_time: 125.6
+Word: design, start_time: 125.6, end_time: 126.1
+Word: was, start_time: 126.1, end_time: 126.3
+Word: Guided, start_time: 126.3, end_time: 126.7
+Word: by, start_time: 126.7, end_time: 126.8
+Word: four, start_time: 126.8, end_time: 127.2
+Word: principles, start_time: 127.2, end_time: 127.9
+Word: modularity, start_time: 127.9, end_time: 128.9
+Word: Simplicity, start_time: 128.9, end_time: 130.1
+Word: analytical, start_time: 130.1, end_time: 131.3
+Word: Clarity, start_time: 131.3, end_time: 131.7
+Word: and, start_time: 131.7, end_time: 132.0
+Word: crucially, start_time: 132.0, end_time: 132.6
+Word: reproducibility, start_time: 132.6, end_time: 133.5
+Word: we, start_time: 133.5, end_time: 134.2
+Word: got, start_time: 134.2, end_time: 134.4
+Word: several, start_time: 134.4, end_time: 134.9
+Word: Baseline, start_time: 134.9, end_time: 135.6
+Word: reinforcement, start_time: 135.6, end_time: 136.4
+Word: learning, start_time: 136.4, end_time: 136.5
+Word: algorithms, start_time: 136.5, end_time: 137.3
+Word: implemented, start_time: 137.3, end_time: 137.8
+Word: and, start_time: 137.8, end_time: 138.5
+Word: more, start_time: 138.5, end_time: 138.7
+Word: to, start_time: 138.7, end_time: 138.8
+Word: come, start_time: 138.8, end_time: 138.8
+Word: as, start_time: 138.8, end_time: 139.7
+Word: l, start_time: 139.7, end_time: 139.9
+Word: m, start_time: 139.9, end_time: 140.1
+Word: lab, start_time: 140.1, end_time: 140.5
+Word: is, start_time: 140.5, end_time: 140.6
+Word: an, start_time: 140.6, end_time: 140.8
+Word: easy, start_time: 140.8, end_time: 141.2
+Word: way, start_time: 141.2, end_time: 141.4
+Word: to, start_time: 141.4, end_time: 141.5
+Word: get, start_time: 141.5, end_time: 141.8
+Word: started, start_time: 141.8, end_time: 142.2
+Word: with, start_time: 142.2, end_time: 142.6
+Word: deep, start_time: 142.6, end_time: 143.1
+Word: reinforcement, start_time: 143.1, end_time: 143.4
+Word: learning, start_time: 143.4, end_time: 144.0
+Word: research, start_time: 144.0, end_time: 144.7
+Word: you, start_time: 144.7, end_time: 145.3
+Word: can, start_time: 145.3, end_time: 145.4
+Word: just, start_time: 145.4, end_time: 145.6
+Word: build, start_time: 145.6, end_time: 146.1
+Word: on, start_time: 146.1, end_time: 146.3
+Word: top, start_time: 146.3, end_time: 146.6
+Word: of, start_time: 146.6, end_time: 146.8
+Word: an, start_time: 146.8, end_time: 147.0
+Word: existing, start_time: 147.0, end_time: 147.0
+Word: algorithm, start_time: 147.0, end_time: 148.1
+Word: and, start_time: 148.1, end_time: 148.5
+Word: Benchmark, start_time: 148.5, end_time: 149.2
+Word: the, start_time: 149.2, end_time: 149.3
+Word: results, start_time: 149.3, end_time: 149.9
+Word: all, start_time: 149.9, end_time: 150.5
+Word: the, start_time: 150.5, end_time: 150.6
+Word: algorithms, start_time: 150.6, end_time: 151.1
+Word: relevant, start_time: 151.1, end_time: 152.1
+Word: environments, start_time: 152.1, end_time: 152.9
+Word: and, start_time: 152.9, end_time: 153.3
+Word: testing, start_time: 153.3, end_time: 153.9
+Word: tools, start_time: 153.9, end_time: 154.4
+Word: are, start_time: 154.4, end_time: 154.8
+Word: included, start_time: 154.8, end_time: 155.4
+Word: in, start_time: 155.4, end_time: 155.5
+Word: a, start_time: 155.5, end_time: 155.7
+Word: single, start_time: 155.7, end_time: 156.3
+Word: repository, start_time: 156.3, end_time: 157.2
+Word: we, start_time: 157.2, end_time: 157.9
+Word: have, start_time: 157.9, end_time: 158.0
+Word: both, start_time: 158.0, end_time: 158.3
+Word: a, start_time: 158.3, end_time: 158.4
+Word: static, start_time: 158.4, end_time: 159.1
+Word: and, start_time: 159.1, end_time: 159.6
+Word: dynamic, start_time: 159.6, end_time: 159.7
+Word: version, start_time: 159.7, end_time: 160.6
+Word: of, start_time: 160.6, end_time: 160.8
+Word: our, start_time: 160.8, end_time: 160.9
+Word: paper, start_time: 160.9, end_time: 161.3
+Word: the, start_time: 161.3, end_time: 161.9
+Word: static, start_time: 161.9, end_time: 162.4
+Word: version, start_time: 162.4, end_time: 162.8
+Word: is, start_time: 162.8, end_time: 162.9
+Word: a, start_time: 162.9, end_time: 163.0
+Word: PDF, start_time: 163.0, end_time: 163.6
+Word: like, start_time: 163.6, end_time: 163.9
+Word: all, start_time: 163.9, end_time: 164.0
+Word: papers, start_time: 164.0, end_time: 164.5
+Word: are, start_time: 164.5, end_time: 164.7
+Word: but, start_time: 164.7, end_time: 165.3
+Word: the, start_time: 165.3, end_time: 165.5
+Word: dynamic, start_time: 165.5, end_time: 166.1
+Word: version, start_time: 166.1, end_time: 166.5
+Word: is, start_time: 166.5, end_time: 166.7
+Word: a, start_time: 166.7, end_time: 166.8
+Word: Jupiter, start_time: 166.8, end_time: 167.1
+Word: notebook, start_time: 167.1, end_time: 167.9
+Word: we, start_time: 167.9, end_time: 168.4
+Word: posted, start_time: 168.4, end_time: 168.9
+Word: it, start_time: 168.9, end_time: 169.0
+Word: on, start_time: 169.0, end_time: 169.2
+Word: Google, start_time: 169.2, end_time: 169.4
+Word: collab, start_time: 169.4, end_time: 170.2
+Word: which, start_time: 170.2, end_time: 170.4
+Word: means, start_time: 170.4, end_time: 171.0
+Word: that, start_time: 171.0, end_time: 171.1
+Word: anyone, start_time: 171.1, end_time: 171.6
+Word: who, start_time: 171.6, end_time: 172.0
+Word: read, start_time: 172.0, end_time: 172.4
+Word: the, start_time: 172.4, end_time: 172.6
+Word: paper, start_time: 172.6, end_time: 173.0
+Word: can, start_time: 173.0, end_time: 173.4
+Word: also, start_time: 173.4, end_time: 174.0
+Word: view, start_time: 174.0, end_time: 174.2
+Word: the, start_time: 174.2, end_time: 174.4
+Word: results, start_time: 174.4, end_time: 174.6
+Word: and, start_time: 174.6, end_time: 175.3
+Word: a, start_time: 175.3, end_time: 175.4
+Word: demo, start_time: 175.4, end_time: 175.8
+Word: of, start_time: 175.8, end_time: 176.2
+Word: slm, start_time: 176.2, end_time: 176.9
+Word: lab, start_time: 176.9, end_time: 177.3
+Word: by, start_time: 177.3, end_time: 177.5
+Word: running, start_time: 177.5, end_time: 177.8
+Word: code, start_time: 177.8, end_time: 178.1
+Word: themselves, start_time: 178.1, end_time: 178.4
+Word: in, start_time: 178.4, end_time: 179.3
+Word: their, start_time: 179.3, end_time: 179.5
+Word: brows, start_time: 179.5, end_time: 179.8
+Transcript: no dependencies necessary we want this to serve as an example School of AI researchers should create both a static and a dynamic version of their research paper so I hope your height you'll find a link to the application in the video description will take one week to choose applications and announce them publicly so if you're interested hurry up and sign up now
+Confidence: 0.9779686331748962
+Word: no, start_time: 179.9, end_time: 180.6
+Word: dependencies, start_time: 180.6, end_time: 181.5
+Word: necessary, start_time: 181.5, end_time: 182.1
+Word: we, start_time: 182.1, end_time: 182.7
+Word: want, start_time: 182.7, end_time: 183.0
+Word: this, start_time: 183.0, end_time: 183.1
+Word: to, start_time: 183.1, end_time: 183.2
+Word: serve, start_time: 183.2, end_time: 183.8
+Word: as, start_time: 183.8, end_time: 184.0
+Word: an, start_time: 184.0, end_time: 184.1
+Word: example, start_time: 184.1, end_time: 184.2
+Word: School, start_time: 184.2, end_time: 185.4
+Word: of, start_time: 185.4, end_time: 185.6
+Word: AI, start_time: 185.6, end_time: 185.9
+Word: researchers, start_time: 185.9, end_time: 186.9
+Word: should, start_time: 186.9, end_time: 187.2
+Word: create, start_time: 187.2, end_time: 187.6
+Word: both, start_time: 187.6, end_time: 188.0
+Word: a, start_time: 188.0, end_time: 188.1
+Word: static, start_time: 188.1, end_time: 188.8
+Word: and, start_time: 188.8, end_time: 189.3
+Word: a, start_time: 189.3, end_time: 189.4
+Word: dynamic, start_time: 189.4, end_time: 189.8
+Word: version, start_time: 189.8, end_time: 190.5
+Word: of, start_time: 190.5, end_time: 190.8
+Word: their, start_time: 190.8, end_time: 191.0
+Word: research, start_time: 191.0, end_time: 191.4
+Word: paper, start_time: 191.4, end_time: 191.7
+Word: so, start_time: 191.7, end_time: 192.1
+Word: I, start_time: 192.1, end_time: 192.2
+Word: hope, start_time: 192.2, end_time: 192.5
+Word: your, start_time: 192.5, end_time: 192.6
+Word: height, start_time: 192.6, end_time: 192.9
+Word: you'll, start_time: 192.9, end_time: 193.2
+Word: find, start_time: 193.2, end_time: 193.6
+Word: a, start_time: 193.6, end_time: 193.7
+Word: link, start_time: 193.7, end_time: 194.0
+Word: to, start_time: 194.0, end_time: 194.3
+Word: the, start_time: 194.3, end_time: 194.5
+Word: application, start_time: 194.5, end_time: 194.7
+Word: in, start_time: 194.7, end_time: 195.4
+Word: the, start_time: 195.4, end_time: 195.7
+Word: video, start_time: 195.7, end_time: 196.0
+Word: description, start_time: 196.0, end_time: 196.3
+Word: will, start_time: 196.3, end_time: 197.4
+Word: take, start_time: 197.4, end_time: 197.6
+Word: one, start_time: 197.6, end_time: 198.1
+Word: week, start_time: 198.1, end_time: 198.3
+Word: to, start_time: 198.3, end_time: 198.6
+Word: choose, start_time: 198.6, end_time: 199.0
+Word: applications, start_time: 199.0, end_time: 199.8
+Word: and, start_time: 199.8, end_time: 200.0
+Word: announce, start_time: 200.0, end_time: 200.3
+Word: them, start_time: 200.3, end_time: 200.5
+Word: publicly, start_time: 200.5, end_time: 201.0
+Word: so, start_time: 201.0, end_time: 201.3
+Word: if, start_time: 201.3, end_time: 201.8
+Word: you're, start_time: 201.8, end_time: 202.0
+Word: interested, start_time: 202.0, end_time: 202.2
+Word: hurry, start_time: 202.2, end_time: 202.8
+Word: up, start_time: 202.8, end_time: 203.0
+Word: and, start_time: 203.0, end_time: 203.2
+Word: sign, start_time: 203.2, end_time: 203.4
+Word: up, start_time: 203.4, end_time: 203.7
+Word: now, start_time: 203.7, end_time: 203.8
+confused_sentence_list:
+ ["hello world in storage and I'm excited to announce that school of AI is launching a research lab thanks to Google Cloud we're going to offer 10 Wizards 1000 US dollars in Cloud credits to pursue some exciting research directions they'll be our fall 2018 fellows each of them will receive personalized mentorship from one of our experience advisors to help them along their Journey we like to grow the amateur research community that means Wizards from around the world who aren't necessarily a part of Academia or industry we believe that by enabling them to do research with a complete pipeline of resources from funding to mentorship to helping them submit their work to relevant Outlets the entire AI Community will benefit so here's the plan we've got some research directions that we think are particularly exciting including", "how to learning or learning to learn Quantum machine learning one shot learning or learning from small data sets and deep reinforcement learning but these are all suggestions all 10 selected applicants will be able to choose the research direction of their choice with one caveat it has to be applied to one of the United Nations 17 sustainable development goals current AI technology accessible to anyone with an internet connection allows Ordinary People to create solutions to accelerate the progress of each of these School of AI research is applied research we make scientific discoveries with specific real world use cases in mind and we need a new standard for how these papers are presented to that end I've assisted too deep reinforcement learning Engineers Laura gracer and Tang Walloon and helping build out a frame", 'work for deep reinforcement learning research called slm lab its design was Guided by four principles modularity Simplicity analytical Clarity and crucially reproducibility we got several Baseline reinforcement learning algorithms implemented and more to come as l m lab is an easy way to get started with deep reinforcement learning research you can just build on top of an existing algorithm and Benchmark the results all the algorithms relevant environments and testing tools are included in a single repository we have both a static and dynamic version of our paper the static version is a PDF like all papers are but the dynamic version is a Jupiter notebook we posted it on Google collab which means that anyone who read the paper can also view the results and a demo of slm lab by running code themselves in their brows', "no dependencies necessary we want this to serve as an example School of AI researchers should create both a static and a dynamic version of their research paper so I hope your height you'll find a link to the application in the video description will take one week to choose applications and announce them publicly so if you're interested hurry up and sign up now"]
+{
+  "usage": {
+    "text_units": 1,
+    "text_characters": 830,
+    "features": 2
+  },
+  "language": "en",
+  "keywords": [
+    {
+      "text": "research lab thanks",
+      "relevance": 0.986814
+    },
+    {
+      "text": "exciting research directions",
+      "relevance": 0.967812
+    },
+    {
+      "text": "entire AI Community",
+      "relevance": 0.949249
+    },
+    {
+      "text": "amateur research community",
+      "relevance": 0.885367
+    },
+    {
+      "text": "Google Cloud",
+      "relevance": 0.640615
+    },
+    {
+      "text": "Cloud credits",
+      "relevance": 0.625499
+    },
+    {
+      "text": "experience advisors",
+      "relevance": 0.583288
+    },
+    {
+      "text": "relevant Outlets",
+      "relevance": 0.573755
+    },
+    {
+      "text": "complete pipeline",
+      "relevance": 0.572805
+    },
+    {
+      "text": "mentorship",
+      "relevance": 0.375552
+    },
+    {
+      "text": "Wizards",
+      "relevance": 0.337454
+    },
+    {
+      "text": "world",
+      "relevance": 0.247444
+    },
+    {
+      "text": "fellows",
+      "relevance": 0.223838
+    },
+    {
+      "text": "dollars",
+      "relevance": 0.223081
+    },
+    {
+      "text": "Academia",
+      "relevance": 0.213412
+    }
+  ],
+  "concepts": [
+    {
+      "text": "Google",
+      "relevance": 0.946252,
+      "dbpedia_resource": "http://dbpedia.org/resource/Google"
+    },
+    {
+      "text": "Cloud computing",
+      "relevance": 0.763487,
+      "dbpedia_resource": "http://dbpedia.org/resource/Cloud_computing"
+    },
+    {
+      "text": "Scientific method",
+      "relevance": 0.729473,
+      "dbpedia_resource": "http://dbpedia.org/resource/Scientific_method"
+    },
+    {
+      "text": "Currency",
+      "relevance": 0.726603,
+      "dbpedia_resource": "http://dbpedia.org/resource/Currency"
+    },
+    {
+      "text": "World",
+      "relevance": 0.612109,
+      "dbpedia_resource": "http://dbpedia.org/resource/World"
+    }
+  ]
+}
+{
+  "usage": {
+    "text_units": 1,
+    "text_characters": 826,
+    "features": 2
+  },
+  "language": "en",
+  "keywords": [
+    {
+      "text": "goals current AI",
+      "relevance": 0.992419
+    },
+    {
+      "text": "Engineers Laura gracer",
+      "relevance": 0.988803
+    },
+    {
+      "text": "small data sets",
+      "relevance": 0.957274
+    },
+    {
+      "text": "deep reinforcement",
+      "relevance": 0.923521
+    },
+    {
+      "text": "specific real world",
+      "relevance": 0.918242
+    },
+    {
+      "text": "Tang Walloon",
+      "relevance": 0.710591
+    },
+    {
+      "text": "AI research",
+      "relevance": 0.684584
+    },
+    {
+      "text": "Ordinary People",
+      "relevance": 0.662223
+    },
+    {
+      "text": "Quantum machine",
+      "relevance": 0.65994
+    },
+    {
+      "text": "scientific discoveries",
+      "relevance": 0.655964
+    },
+    {
+      "text": "research direction",
+      "relevance": 0.652383
+    },
+    {
+      "text": "United Nations",
+      "relevance": 0.647357
+    },
+    {
+      "text": "internet connection",
+      "relevance": 0.643686
+    },
+    {
+      "text": "new standard",
+      "relevance": 0.633462
+    },
+    {
+      "text": "caveat",
+      "relevance": 0.419704
+    },
+    {
+      "text": "applicants",
+      "relevance": 0.38868
+    },
+    {
+      "text": "shot",
+      "relevance": 0.375438
+    },
+    {
+      "text": "suggestions",
+      "relevance": 0.365914
+    },
+    {
+      "text": "choice",
+      "relevance": 0.362196
+    },
+    {
+      "text": "frame",
+      "relevance": 0.361295
+    },
+    {
+      "text": "progress",
+      "relevance": 0.359743
+    },
+    {
+      "text": "development",
+      "relevance": 0.356063
+    },
+    {
+      "text": "technology",
+      "relevance": 0.355893
+    },
+    {
+      "text": "solutions",
+      "relevance": 0.355341
+    },
+    {
+      "text": "School",
+      "relevance": 0.354959
+    },
+    {
+      "text": "cases",
+      "relevance": 0.35428
+    },
+    {
+      "text": "mind",
+      "relevance": 0.354195
+    }
+  ],
+  "concepts": [
+    {
+      "text": "Machine learning",
+      "relevance": 0.975711,
+      "dbpedia_resource": "http://dbpedia.org/resource/Machine_learning"
+    },
+    {
+      "text": "Artificial intelligence",
+      "relevance": 0.924762,
+      "dbpedia_resource": "http://dbpedia.org/resource/Artificial_intelligence"
+    },
+    {
+      "text": "United Nations",
+      "relevance": 0.874772,
+      "dbpedia_resource": "http://dbpedia.org/resource/United_Nations"
+    },
+    {
+      "text": "Scientific method",
+      "relevance": 0.794779,
+      "dbpedia_resource": "http://dbpedia.org/resource/Scientific_method"
+    },
+    {
+      "text": "Sustainable development",
+      "relevance": 0.697209,
+      "dbpedia_resource": "http://dbpedia.org/resource/Sustainable_development"
+    },
+    {
+      "text": "Millennium Development Goals",
+      "relevance": 0.656035,
+      "dbpedia_resource": "http://dbpedia.org/resource/Millennium_Development_Goals"
+    },
+    {
+      "text": "Sustainability",
+      "relevance": 0.654835,
+      "dbpedia_resource": "http://dbpedia.org/resource/Sustainability"
+    },
+    {
+      "text": "Psychology",
+      "relevance": 0.630061,
+      "dbpedia_resource": "http://dbpedia.org/resource/Psychology"
+    },
+    {
+      "text": "Research",
+      "relevance": 0.625696,
+      "dbpedia_resource": "http://dbpedia.org/resource/Research"
+    },
+    {
+      "text": "Learning",
+      "relevance": 0.597274,
+      "dbpedia_resource": "http://dbpedia.org/resource/Learning"
+    },
+    {
+      "text": "Reinforcement learning",
+      "relevance": 0.55924,
+      "dbpedia_resource": "http://dbpedia.org/resource/Reinforcement_learning"
+    },
+    {
+      "text": "Applied research",
+      "relevance": 0.536857,
+      "dbpedia_resource": "http://dbpedia.org/resource/Applied_research"
+    },
+    {
+      "text": "Basic research",
+      "relevance": 0.529817,
+      "dbpedia_resource": "http://dbpedia.org/resource/Basic_research"
+    },
+    {
+      "text": "Education",
+      "relevance": 0.52068,
+      "dbpedia_resource": "http://dbpedia.org/resource/Education"
+    },
+    {
+      "text": "Science",
+      "relevance": 0.507488,
+      "dbpedia_resource": "http://dbpedia.org/resource/Science"
+    },
+    {
+      "text": "Human rights",
+      "relevance": 0.46043,
+      "dbpedia_resource": "http://dbpedia.org/resource/Human_rights"
+    },
+    {
+      "text": "United Nations General Assembly",
+      "relevance": 0.444121,
+      "dbpedia_resource": "http://dbpedia.org/resource/United_Nations_General_Assembly"
+    },
+    {
+      "text": "International development",
+      "relevance": 0.422028,
+      "dbpedia_resource": "http://dbpedia.org/resource/International_development"
+    },
+    {
+      "text": "United Arab Emirates",
+      "relevance": 0.419944,
+      "dbpedia_resource": "http://dbpedia.org/resource/United_Arab_Emirates"
+    },
+    {
+      "text": "Developmental psychology",
+      "relevance": 0.418355,
+      "dbpedia_resource": "http://dbpedia.org/resource/Developmental_psychology"
+    },
+    {
+      "text": "Cognitive science",
+      "relevance": 0.41457,
+      "dbpedia_resource": "http://dbpedia.org/resource/Cognitive_science"
+    },
+    {
+      "text": "2005 World Summit",
+      "relevance": 0.409664,
+      "dbpedia_resource": "http://dbpedia.org/resource/2005_World_Summit"
+    },
+    {
+      "text": "United Nations Millennium Declaration",
+      "relevance": 0.396949,
+      "dbpedia_resource": "http://dbpedia.org/resource/United_Nations_Millennium_Declaration"
+    },
+    {
+      "text": "Child mortality",
+      "relevance": 0.387866,
+      "dbpedia_resource": "http://dbpedia.org/resource/Child_mortality"
+    },
+    {
+      "text": "Human Development Index",
+      "relevance": 0.383594,
+      "dbpedia_resource": "http://dbpedia.org/resource/Human_Development_Index"
+    },
+    {
+      "text": "Standardization",
+      "relevance": 0.379331,
+      "dbpedia_resource": "http://dbpedia.org/resource/Standardization"
+    },
+    {
+      "text": "Malaria",
+      "relevance": 0.363422,
+      "dbpedia_resource": "http://dbpedia.org/resource/Malaria"
+    },
+    {
+      "text": "Internet",
+      "relevance": 0.360967,
+      "dbpedia_resource": "http://dbpedia.org/resource/Internet"
+    },
+    {
+      "text": "Mind",
+      "relevance": 0.355731,
+      "dbpedia_resource": "http://dbpedia.org/resource/Mind"
+    },
+    {
+      "text": "Internet research",
+      "relevance": 0.355431,
+      "dbpedia_resource": "http://dbpedia.org/resource/Internet_research"
+    },
+    {
+      "text": "Intelligence",
+      "relevance": 0.355304,
+      "dbpedia_resource": "http://dbpedia.org/resource/Intelligence"
+    }
+  ]
+}
+{
+  "usage": {
+    "text_units": 1,
+    "text_characters": 826,
+    "features": 2
+  },
+  "language": "en",
+  "keywords": [
+    {
+      "text": "Simplicity analytical Clarity",
+      "relevance": 0.919959
+    },
+    {
+      "text": "deep reinforcement",
+      "relevance": 0.860347
+    },
+    {
+      "text": "slm lab",
+      "relevance": 0.858089
+    },
+    {
+      "text": "algorithms relevant environments",
+      "relevance": 0.841406
+    },
+    {
+      "text": "dynamic version",
+      "relevance": 0.686667
+    },
+    {
+      "text": "Baseline reinforcement",
+      "relevance": 0.618068
+    },
+    {
+      "text": "crucially reproducibility",
+      "relevance": 0.540565
+    },
+    {
+      "text": "Google collab",
+      "relevance": 0.522376
+    },
+    {
+      "text": "Jupiter notebook",
+      "relevance": 0.480021
+    },
+    {
+      "text": "easy way",
+      "relevance": 0.45616
+    },
+    {
+      "text": "single repository",
+      "relevance": 0.455373
+    },
+    {
+      "text": "static version",
+      "relevance": 0.451375
+    },
+    {
+      "text": "testing tools",
+      "relevance": 0.446091
+    },
+    {
+      "text": "lab its design",
+      "relevance": 0.437169
+    }
+  ],
+  "concepts": [
+    {
+      "text": "Machine learning",
+      "relevance": 0.984604,
+      "dbpedia_resource": "http://dbpedia.org/resource/Machine_learning"
+    },
+    {
+      "text": "Reinforcement learning",
+      "relevance": 0.909702,
+      "dbpedia_resource": "http://dbpedia.org/resource/Reinforcement_learning"
+    },
+    {
+      "text": "Algorithm",
+      "relevance": 0.687512,
+      "dbpedia_resource": "http://dbpedia.org/resource/Algorithm"
+    },
+    {
+      "text": "Scientific method",
+      "relevance": 0.53602,
+      "dbpedia_resource": "http://dbpedia.org/resource/Scientific_method"
+    },
+    {
+      "text": "Programming language",
+      "relevance": 0.519461,
+      "dbpedia_resource": "http://dbpedia.org/resource/Programming_language"
+    },
+    {
+      "text": "Paper",
+      "relevance": 0.482426,
+      "dbpedia_resource": "http://dbpedia.org/resource/Paper"
+    },
+    {
+      "text": "Computer program",
+      "relevance": 0.478486,
+      "dbpedia_resource": "http://dbpedia.org/resource/Computer_program"
+    },
+    {
+      "text": "Learning",
+      "relevance": 0.47481,
+      "dbpedia_resource": "http://dbpedia.org/resource/Learning"
+    },
+    {
+      "text": "Theoretical computer science",
+      "relevance": 0.458827,
+      "dbpedia_resource": "http://dbpedia.org/resource/Theoretical_computer_science"
+    }
+  ]
+}

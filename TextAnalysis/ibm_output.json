@@ -1,0 +1,113 @@
+{
+  "usage": {
+    "text_units": 1,
+    "text_characters": 826,
+    "features": 2
+  },
+  "language": "en",
+  "keywords": [
+    {
+      "text": "Simplicity analytical Clarity",
+      "relevance": 0.919959
+    },
+    {
+      "text": "deep reinforcement",
+      "relevance": 0.860347
+    },
+    {
+      "text": "slm lab",
+      "relevance": 0.858089
+    },
+    {
+      "text": "algorithms relevant environments",
+      "relevance": 0.841406
+    },
+    {
+      "text": "dynamic version",
+      "relevance": 0.686667
+    },
+    {
+      "text": "Baseline reinforcement",
+      "relevance": 0.618068
+    },
+    {
+      "text": "crucially reproducibility",
+      "relevance": 0.540565
+    },
+    {
+      "text": "Google collab",
+      "relevance": 0.522376
+    },
+    {
+      "text": "Jupiter notebook",
+      "relevance": 0.480021
+    },
+    {
+      "text": "easy way",
+      "relevance": 0.45616
+    },
+    {
+      "text": "single repository",
+      "relevance": 0.455373
+    },
+    {
+      "text": "static version",
+      "relevance": 0.451375
+    },
+    {
+      "text": "testing tools",
+      "relevance": 0.446091
+    },
+    {
+      "text": "lab its design",
+      "relevance": 0.437169
+    }
+  ],
+  "concepts": [
+    {
+      "text": "Machine learning",
+      "relevance": 0.984604,
+      "dbpedia_resource": "http://dbpedia.org/resource/Machine_learning"
+    },
+    {
+      "text": "Reinforcement learning",
+      "relevance": 0.909702,
+      "dbpedia_resource": "http://dbpedia.org/resource/Reinforcement_learning"
+    },
+    {
+      "text": "Algorithm",
+      "relevance": 0.687512,
+      "dbpedia_resource": "http://dbpedia.org/resource/Algorithm"
+    },
+    {
+      "text": "Scientific method",
+      "relevance": 0.53602,
+      "dbpedia_resource": "http://dbpedia.org/resource/Scientific_method"
+    },
+    {
+      "text": "Programming language",
+      "relevance": 0.519461,
+      "dbpedia_resource": "http://dbpedia.org/resource/Programming_language"
+    },
+    {
+      "text": "Paper",
+      "relevance": 0.482426,
+      "dbpedia_resource": "http://dbpedia.org/resource/Paper"
+    },
+    {
+      "text": "Computer program",
+      "relevance": 0.478486,
+      "dbpedia_resource": "http://dbpedia.org/resource/Computer_program"
+    },
+    {
+      "text": "Learning",
+      "relevance": 0.47481,
+      "dbpedia_resource": "http://dbpedia.org/resource/Learning"
+    },
+    {
+      "text": "Theoretical computer science",
+      "relevance": 0.458827,
+      "dbpedia_resource": "http://dbpedia.org/resource/Theoretical_computer_science"
+    }
+  ]
+}
