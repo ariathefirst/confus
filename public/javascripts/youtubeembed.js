@@ -3,9 +3,11 @@ tag.src = "https://www.youtube.com/player_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-
+const DELTA = 5; // Length of an interval
 
 function onPlayerReady(event){
+	while (player.getDuration() === 0); // avoid dividing by zero while waiting for metadata to load
+
 	var lastTimeStamp = 0.0;
 	var confusionBar = document.getElementById('confusion-bar');
 	document.addEventListener('keydown', toggleConfusion);
@@ -22,7 +24,7 @@ function onPlayerReady(event){
 			var element = document.createElement('div');
 			element.classList = 'confusion-block';
 			confusionBar.appendChild(element);
-			// element.textContent = currentTimeStamp.toString();
+			element.textContent = isConfused;
 			lastTimeStamp = currentTimeStamp;
 		}
 	}
@@ -47,6 +49,7 @@ function onYouTubePlayerAPIReady() {
 var isConfused = false;
 function toggleConfusion(event) {
 	const keyName = event.key;
-	// todo: if key is spacebar
-	isConfused = !isConfused;	
+	if (keyName === "i" || keyName === "I") {
+		isConfused = !isConfused;	
+	}
 }
