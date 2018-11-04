@@ -20,15 +20,20 @@ function onPlayerReady(event){
 			return;
 		}
 		let currentTimeStamp = player.getCurrentTime();
-		if (currentTimeStamp >= (lastTimeStamp + 4.9)) {
+		if (currentTimeStamp >= (lastTimeStamp + 0.5)) {
 			/* if the video has progressed more than ~5 seconds since
 			   the last time this function was called. */
 			var element = document.createElement('div');
 			element.classList = 'confusion-block';
 			confusionBar.appendChild(element);
-			element.textContent = isConfused;
 			confusionArray[currentInterval] = isConfused ? 1 : 0;
 			currentInterval += 1;
+			if (isConfused) {
+				element.style.background = "#66a5ad";
+			} else {
+				element.style.background = "#c4dfe6";
+			}
+			element.style.width = 5 / player.getDuration() * 100 + "%";
 			lastTimeStamp = currentTimeStamp;
 		}
 	}

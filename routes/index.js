@@ -4,7 +4,6 @@ var url = require("url");
 var mongoose = require("mongoose");
 var schema = require("../schema.js");
 
-/* GET home page. */
 router.get('/:vidId', function(req, res, next) {
 	var vidId = url.parse(req.url).pathname;
 	console.log(vidId);
@@ -20,10 +19,8 @@ router.post('/:vidId', function(req, res, next) {
 		confusionArray: req.body.confusionArray,
 	});
 	feedback.save()
-	.then(item => {res.send("item saved to database");})
+		.then(item => {res.send("item saved to database");})
 });
-
-
 
 router.get('/', function(req, res, next) {
 	res.render('index', req.params);

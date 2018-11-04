@@ -1,20 +1,19 @@
 extends layout
 
 block content
-	h1= title
-	p Welcome to #{title}
-	div(id='ytplayer')
-	script.
-		var vidId = "#{vidId}";
-	script(src='javascripts/youtubeembed.js')
-	div(id='timer')
-	div(id='confusion-bar')
-	script.
-		function fillArray() {
-			document.getElementById("confusionArray").value = confusionArray;
-		}
-	form(method="POST" onsubmit="fillArray()" action= vidId)
-		input#videoId.form-control(type="hidden", name="videoId", value= vidId)
-		input#confusionArray.form-control(type="hidden", name="confusionArray")
-		input#submit(type="submit", value="Submit feedback")
-
+	div(id='content')
+		h3= '[course name]'
+		div(id='ytplayer')
+		script.
+			var vidId = "#{vidId}";
+		script(src='javascripts/youtubeembed.js')
+		div(id='timer')
+		div(id='confusion-bar')
+		script.
+			function fillArray() {
+				document.getElementById("confusionArray").value = confusionArray;
+			}
+		form(method="POST" onsubmit="fillArray()" action= vidId)
+			input#videoId.form-control(type="hidden", name="videoId", value= vidId)
+			input#confusionArray.form-control(type="hidden", name="confusionArray")
+			input#submit(type="submit", value="Submit feedback")
