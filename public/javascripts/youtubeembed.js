@@ -25,6 +25,11 @@ function onPlayerReady(event){
 			element.classList = 'confusion-block';
 			confusionBar.appendChild(element);
 			element.textContent = isConfused;
+			if (isConfused) {
+				element.style.background = "yellow";
+			} else {
+				element.style.background = "#666"
+			}
 			element.style.width = 5 / player.getDuration() * 100 + "%";
 			lastTimeStamp = currentTimeStamp;
 		}

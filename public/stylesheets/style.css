@@ -1,7 +1,11 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  display: inline-block;
+    font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+    width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
 }
 
 a {
@@ -13,7 +17,7 @@ a {
 	height: 20px;
     background: #ddd;
     margin-top: 0.5rem;
-    max-width: 640px;
+    width: 640px;
 }
 
 .confusion-block {
