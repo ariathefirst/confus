@@ -1,6 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: inline-block;
 }
 
 a {
@@ -10,11 +11,15 @@ a {
 #confusion-bar {
 	display: flex;
 	height: 20px;
+    background: #ddd;
+    margin-top: 0.5rem;
+    max-width: 640px;
 }
 
 .confusion-block {
-	width: 5%;
+	/*width: 5%;*/
 	height: 100%;
-	background-color: red;
-	border: 2px black solid;
+	background-color: yellow;
+	overflow: hidden;
+
 }
