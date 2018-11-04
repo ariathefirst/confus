@@ -34,7 +34,7 @@ router.get('/videolist', function(req,res,next) {
   	}
   	client.end();
 	});
-	res.render('videolist', req.params);
+	//res.render('videolist', req.params);
 
 });
 
