@@ -7,7 +7,9 @@ const DELTA = 5; // Length of an interval
 
 function onPlayerReady(event){
 	while (player.getDuration() === 0); // avoid dividing by zero while waiting for metadata to load
-
+	var numIntervals = Math.trunc(player.getDuration() / DELTA);
+	confusionArray = Array(numIntervals); // intentionally global
+	var currentInterval = 0;
 	var lastTimeStamp = 0.0;
 	var confusionBar = document.getElementById('confusion-bar');
 	document.addEventListener('keydown', toggleConfusion);
@@ -25,6 +27,8 @@ function onPlayerReady(event){
 			element.classList = 'confusion-block';
 			confusionBar.appendChild(element);
 			element.textContent = isConfused;
+			confusionArray[currentInterval] = isConfused ? 1 : 0;
+			currentInterval += 1;
 			lastTimeStamp = currentTimeStamp;
 		}
 	}
