@@ -18,3 +18,20 @@ a {
 	background-color: red;
 	border: 2px black solid;
 }
+
+.form-registration {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-registration {
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-registration input {
+  width: 100%;
+  margin: 0px 0 10px;
+}
+.form-registration .btn {
+  flex: 1 0 100%;
+}
