@@ -30,11 +30,11 @@ function onPlayerReady(event){
 			} else {
 				element.style.background = "#c4dfe6"
 			}
-			element.style.width = 5 / player.getDuration() * 100 + "%";
+			element.style.width = 0.5 / player.getDuration() * 100 + "%";
 			lastTimeStamp = currentTimeStamp;
 		}
 	}
-	var handle = setInterval(intervalCheck, 5000); // call intervalCheck every 5 seconds
+	var handle = setInterval(intervalCheck, 501); // call intervalCheck every 5 seconds
 }
 
 
