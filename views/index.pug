@@ -1,12 +1,21 @@
 extends layout
 
 block content
-	h1= title
-	p Welcome to #{title}
-	div(id='ytplayer')
-	script.
-		var vidId = "#{vidId}";
-	script(src='javascripts/youtubeembed.js')
-	div(id='timer')
-	div(id='confusion-bar')
+  -data = data || {}
+  form(action="." method="POST")
+    label(for="email") Email:
+    input(
+      type="email"
+      id="email"
+      name="email"
+      value=data.email
+    )
+    label(for="password") Password:
+    input(
+      type="text"
+      id="password"
+      name="password"
+      value = data.email
+    )
 
+    input(type="submit" value="Submit")
