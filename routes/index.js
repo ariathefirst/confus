@@ -28,6 +28,7 @@ router.get('/videolist', function(req,res,next) {
 
 	client.query('SELECT * FROM feedback;', (err, res) => {
   	if (err) throw err;
+		console.log('HELP');
   	for (let row of res.rows) {
     	console.log(JSON.stringify(row));
   	}
