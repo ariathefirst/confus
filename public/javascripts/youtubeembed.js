@@ -9,6 +9,7 @@ function onPlayerReady(event){
 	while (player.getDuration() === 0); // avoid dividing by zero while waiting for metadata to load
 	var numIntervals = Math.trunc(player.getDuration() / DELTA);
 	confusionArray = Array(numIntervals); // intentionally global
+	confusionArray.fill(0);
 	var currentInterval = 0;
 	var lastTimeStamp = 0.0;
 	var confusionBar = document.getElementById('confusion-bar');

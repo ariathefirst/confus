@@ -1,9 +1,7 @@
 var histogram = document.getElementById('histogram');
-for(i=0;i<aggregateArray.length;i++) {
-	var bar = document.createElement('div');
-	bar.classList = "histogram-bar";
-	histogram.appendChild(bar);
-	bar.style.height = `${aggregateArray[i]}px`
+console.log("THIS FILE HAS RUN");
+const BLOCKWIDTH = Math.ceil(parseInt(histogram.style.clientHeight) / aggregateArray.length);
+var blocks = histogram.children;
+for(let i=0;i<blocks.length;i++) {
+	blocks[i].style.height = `${aggregateArray[i]*15}px`;
 }
-	
-

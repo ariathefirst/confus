@@ -105,3 +105,25 @@ a {
 	overflow: hidden;
 
 }
+
+/* histogram */
+#histogram {
+	display: flex;
+	height: 50px;
+	width=100%;
+	vertical-align: center;
+	position:absolute;
+	left: 25%;
+	top: 50%;
+	-moz-transform: scale(1, -1);
+-webkit-transform: scale(1, -1);
+-o-transform: scale(1, -1);
+-ms-transform: scale(1, -1);
+transform: scale(1, -1);
+
+}
+
+.histogram-block {
+	background-color: #f99945;
+	width:  5px;
+}

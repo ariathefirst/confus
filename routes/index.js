@@ -13,16 +13,32 @@ router.get('/:vidId', function(req, res, next) {
 });
 
 router.get('/:vidId/summary', function(req, res, next) {
-	var videoId = req.path.split('/')[0];
+	var videoId = req.params.vidId;
+	
 	console.log(videoId);
+	console.log(Feedback.find({}).exec((err, result) => result));
 	Feedback.find({'videoId': videoId}).exec(function(err, result) {
 		if (!err) {
-			console.log(result);
-			let aggreagateArray = Array(result[0].length);
-			aggregateArray.fill(0);
+			if(result.length === 0) {
+				res.send("No data available.");
+				return;
+			}
 			for(let i=0;i<result.length;i++) {
-				for(let j=0;j<result[i].length;j++) {
-					aggregateArray[j] += result[i][j];
+				
+				result[i].confusionArray = result[i].confusionArray[0].split(',');
+				
+				result[i].confusionArray = result[i].confusionArray.map(x => parseInt(x));
+				if (i === 0) {
+					var aggregateArray = Array(result[0].length);
+					aggregateArray.fill(0);
+				}
+				console.log(`Length of agg array is ${aggregateArray.length}`);
+				console.log(result[i].confusionArray);
+				for(let j=0;j<result[i].confusionArray.length;j++) {
+					if (j >= aggregateArray.length) {
+						aggregateArray.push(0);
+					}
+					aggregateArray[j] += result[i].confusionArray[j];
 				}
 			}
 			res.render('vidSummary', {'feedbackMatrix': result, 'aggregateArray': aggregateArray});
@@ -32,13 +48,12 @@ router.get('/:vidId/summary', function(req, res, next) {
 
 
 router.post('/:vidId', function(req, res, next) {
-	console.log(req);
 	var feedback = new Feedback({
 		videoId: req.body.videoId,
 		confusionArray: req.body.confusionArray,
 	});
-	feedback.save()
-		.then(item => {res.send("item saved to database");})
+	feedback.save((err) => {if (err) console.log('ERROR ON SAVE!');});
+	res.send('item saved to database!');
 });
 
 router.get('/', function(req, res, next) {

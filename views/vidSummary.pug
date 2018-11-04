@@ -2,4 +2,12 @@ extends layout
 
 block content
 	div(id='histogram')
+		each value in aggregateArray
+			div(class="histogram-block" style)
+	script.
+		var aggregateArray = "#{aggregateArray}";
+		aggregateArray = aggregateArray.split(",");
+		aggregateArray = aggregateArray.map(x => parseInt(x));
+
+	script(src="../javascripts/summary.js")
 	
