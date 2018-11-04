@@ -27,10 +27,10 @@ router.get('/videolist', function(req,res,next) {
 	client.connect();
 
 	client.query('SELECT * FROM feedback;', (err, res) => {
-  	if (err) throw err;
 		console.log('HELP');
+  	if (err) throw err;
   	for (let row of res.rows) {
-    	console.log(JSON.stringify(row));
+    	res.send(JSON.stringify(row));
   	}
   	client.end();
 	});
